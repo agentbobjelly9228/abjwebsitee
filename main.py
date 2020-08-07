@@ -8,4 +8,5 @@ app = Flask(__name__)
 def myapp():
     return '<h1>hi</h1>'
 
-app.run(debug=False)
+if __name__ == "__main__":
+    app.run(debug=False)
