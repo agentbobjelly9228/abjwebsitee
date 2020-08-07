@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1>Toilet paper calculator</h1>
+<form method="POST" action="/">
+    <input type="text" placeholder="# of rolls" name="num">
+    <input type="submit" value="calculate">
+</form>
+
+<p>{{val}} days</p>
+
+{% endblock %}
