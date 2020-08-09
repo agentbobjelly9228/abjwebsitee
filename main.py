@@ -10,7 +10,9 @@ def myapp():
     if request.method == 'POST':
         value = int(request.form['num'])
         value *= 5.5
-    
+        print('poooo')
+    if request.method == "GET":
+        print('ppoooo')    
     return render_template('index.html', val=value)
 
 if __name__ == "__main__":
