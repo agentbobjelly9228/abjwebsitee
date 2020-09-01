@@ -1,22 +1,4 @@
-# from flask import Flask, render_template, request, url_for, redirect
-# import smtplib
 
-
-# app = Flask(__name__)
-
-# @app.route('/', methods=['POST', 'GET'])
-# def myapp():
-#     value = 0
-#     if request.method == 'POST':
-#         value = int(request.form['num'])
-#         value *= 5.5
-#         print('poooo')
-#     if request.method == "GET":
-#         print('ppoooo')    
-#     return render_template('index.html', val=value)
-
-# if __name__ == "__main__":
-#     app.run(debug=False)
 
 from flask import Flask, request, redirect, url_for, render_template
 import smtplib
