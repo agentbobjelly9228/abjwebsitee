@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}" type="text/css">
+    </head>
+    <body>
+        <body>
+            
+              
+              <section id = "hello">
+                <h1 style="font-size: 70px; text-align: center; color: black">ABJ Industries <img src="{{ url_for('static', filename = 'busicon.png')}}" alt="" style="width: 100px; height: 100px;"></h1>
+                <p> 
+                    <a href="{{ url_for('about')}}">What we do</a>
+                    <a href="{{ url_for('suggestions') }}">Suggestions</a>
+                    <a href="">Our Products</a>
+                    <a href="{{ url_for('index') }}">Home</a>
+                </p>
+              </section>
+            <h2>What is ABJ Industries?</h2>
+              <p id = "what">
+                  ABJ Industries is a company that develops applications such as websites and mobile apps for many people around the world. <br>
+                  Our company is operated by a small group of talented teenagers. We may be young, but we are able to make a difference. <br>
+                  We create our mobile apps with a unique user experience making our apps very easy to use and also very useful. <br>
+                  Not only is it fun but its also functional, which is why are apps are "funfunctional".
+              </p>
+    </body>
+</html>
