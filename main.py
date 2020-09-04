@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index2.html')
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+    return render_template("about2.html")
 
 @app.route('/suggestions', methods = ["POST", "GET"])
 def suggestions():
@@ -29,7 +29,7 @@ def suggestions():
 
             msg = f"Subject: {subject}\n\n{body}"
             smtp.sendmail('suggestabj@gmail.com', 'agentbobjelly@gmail.com', msg)
-    return render_template("suggestions.html")
+    return render_template("suggestions2.html")
 
 
 if __name__ == "__main__":

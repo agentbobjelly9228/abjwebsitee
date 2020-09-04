@@ -1,0 +1,80 @@
+#toppart {
+    font-size: 88px
+  }
+  
+  #secondtop {
+    font-size: 60px;
+  }
+  h2 {
+      text-align: center
+  }
+  h3 {
+      text-align: center
+  }
+  h3 {
+      font-size: 32px;
+  }
+  h1 {
+      text-align: center;
+  }
+  
+  #about {
+      background-color: rgb(90, 180, 169);
+      display: block;
+    margin: 0 auto;
+    font-size: 40px;
+    width: 75%;
+    height: 100px;
+      text-align: center;
+  }
+  #about:hover {
+      background-color: rgb(0, 153, 255);
+  }
+  #home {
+      background-color: rgb(90, 180, 169);
+          display: block;
+      margin: 0 auto;
+    font-size: 40px;
+    width: 75%;
+    height: 100px;
+      text-align: center
+  }
+  #home:hover {
+      background-color: rgb(0, 153, 255);
+  }
+  #products {
+      background-color:rgb(90, 180, 169);
+          display: block;
+      margin: 0 auto;
+    font-size: 40px;
+    width: 75%;
+    height: 100px;
+      text-align: center
+  }
+  #products:hover {
+      background-color:rgb(0, 153, 255);
+  }
+  #suggestions {
+    background-color:rgb(90, 180, 169);
+    display: block;
+    margin: 0 auto;
+    font-size: 40px;
+    width: 75%;
+    height: 100px;
+      text-align: center
+  }
+  #suggestions:hover {
+    background-color:rgb(0, 153, 255);
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  #todoicon {
+      width: 10%;
+  }
+
+  #sug {
+      font-size: 30px;
+  }
