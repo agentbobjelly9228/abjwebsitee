@@ -65,7 +65,7 @@
       background-color:rgb(99, 151, 201);
       display: block;
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 40px;
     width: 75%;
     height: 100px;
       text-align: center
@@ -81,4 +81,8 @@
   img {
       width: 210px;
       height: 210px;
+  }
+
+  p {
+      text-align: center;
   }
