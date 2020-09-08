@@ -31,6 +31,10 @@ def suggestions():
             smtp.sendmail('suggestabj@gmail.com', 'agentbobjelly@gmail.com', msg)
     return render_template("suggestions2.html")
 
+@app.route('/products')
+def products():
+    return render_template("products.html")
+
 
 if __name__ == "__main__":
     app.run(debug=False)

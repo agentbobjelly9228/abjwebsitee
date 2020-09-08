@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+ 
+<link href="{{ url_for('static', filename = 'css/otherstyle2.css')}}" rel="stylesheet" type="text/css" />
+ 
+<head>
+  <title>
+    ABJ Industries Official Website
+  </title>
+</head>
+<body>
+  <table width="100%" border="20">
+    <tr>
+      <td colspan="2" bgcolor="Coral">
+        <h1>
+          <p style="color:white" id="toppart">
+            <font face="WildWest">
+              ABJ INDUSTRIES
+            </font>
+            <br />
+          </h1>
+        </td>
+      </tr>
+      <tr valign = "top">
+        <td bgcolor = "$666CCC" width = "100">
+        <br>
+        <br>
+        <a href="{{ url_for('index') }}" style="text-decoration: none;">
+            <button id = "home">
+                Home
+            </button>
+        </a>
+            
+                <br>
+                <a href="{{ url_for('about') }}" style="text-decoration: none;">
+                    <button id = "about">
+                        About ABJ
+                    </button>
+                </a>
+                    <br>
+                    <a href="{{ url_for('products') }}" style="text-decoration: none;">
+                      <button id = "about">
+                        Our Products
+                      </button>
+                    </a>
+                <br>
+                <a href="{{ url_for('suggestions') }}" style="text-decoration: none;">
+                    <button id = "suggestions">
+                        Suggestions
+                    </button>
+                </a>
+                <br>
+        </td>
+          <td bgcolor = "silver" width = "100" height = "200">
+            <br>
+            <br>
+            <h3 style = "text-align: center;">Our Products</h3>
+
+            <article style="align-items: center;">
+              <h4 style="text-align: center; font-size: 20px;">List-To-Do</h4>
+              
+              <a    href="https://apps.apple.com/us/app/list-to-do/id1524408445" style="text-align: center;">
+          
+                <button id = "todo" style="text-align: center; margin-left: 25%;">
+               <img src="{{url_for('static', filename='busicon2.png') }}" alt="">
+                </button>
+              </a>
+            </article>
+            
+    </table>
+  </body>
+</html>

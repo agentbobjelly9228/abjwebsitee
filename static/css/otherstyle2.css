@@ -19,7 +19,7 @@
   }
   
   #about {
-    background-color: rgb(99, 151, 201);
+      background-color: rgb(99, 151, 201);
       display: block;
     margin: 0 auto;
     font-size: 40px;
@@ -28,23 +28,23 @@
       text-align: center;
   }
   #about:hover {
-      background-color: rgb(0, 153, 255);
+      background-color:rgb(67, 135, 175);
   }
   #home {
-    background-color: rgb(99, 151, 201);
-          display: block;
-      margin: 0 auto;
+      background-color: rgb(99, 151, 201);
+      display: block;
+    margin: 0 auto;
     font-size: 40px;
     width: 75%;
     height: 100px;
       text-align: center
   }
   #home:hover {
-      background-color: rgb(0, 153, 255);
+      background-color: rgb(67, 135, 175);
   }
   #products {
-    background-color: rgb(99, 151, 201);
-          display: block;
+      background-color:rgb(99, 151, 201);
+      display: block;
       margin: 0 auto;
     font-size: 40px;
     width: 75%;
@@ -52,11 +52,11 @@
       text-align: center
   }
   #products:hover {
-      background-color:rgb(0, 153, 255);
+      background-color: rgb(67, 135, 175);
   }
   #suggestions {
-    background-color: rgb(99, 151, 201);
-    display: block;
+      background-color:rgb(99, 151, 201);
+      display: block;
     margin: 0 auto;
     font-size: 40px;
     width: 75%;
@@ -64,17 +64,14 @@
       text-align: center
   }
   #suggestions:hover {
-    background-color:rgb(0, 153, 255);
+      background-color: rgb(67, 135, 175);
   }
-
-  a {
-      text-decoration: none;
+  #todo {
+    border: 0;
+    box-decoration-break: none;
+    background-color: transparent;
   }
-
-  #todoicon {
-      width: 10%;
-  }
-
-  #sug {
-      font-size: 30px;
+  img {
+      width: 210px;
+      height: 210px;
   }
