@@ -1,8 +1,9 @@
 from flask import Flask, request, redirect, url_for, render_template
 import smtplib
-
+from flask_mobility import Mobility
 
 app = Flask(__name__)
+Mobility(app)
 
 @app.route('/')
 def index():
