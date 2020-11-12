@@ -1,7 +1,6 @@
 from flask import Flask, request, redirect, url_for, render_template
 import smtplib
 from flask_mobility import Mobility
-from firebase import firebase
 
 # firebase = firebase.FirebaseApplication('https://abj-website.firebaseio.com/')
 
