@@ -18,13 +18,13 @@ Mobility(app)
 
 @app.route('/')
 def index():
-    try{
+    try:
         from firebase import firebase
         return render_template('index2.html', coming=['placeholder'])
-    }
-    except Exception as e {
+    
+    except Exception as e:
         return str(e)
-    }
+    
     
 
 @app.route('/about')
