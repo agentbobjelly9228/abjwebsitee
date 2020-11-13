@@ -1,31 +1,24 @@
 from flask import Flask, request, redirect, url_for, render_template
 import smtplib
 from flask_mobility import Mobility
-# from firebase import firebase
-# firebase = firebase.FirebaseApplication('https://abj-website-coming.firebaseio.com/', None)
-# # data = {
-# #     'coming soon': [
-# #         'placeholder',
-# #         {'test': 'https://images-na.ssl-images-amazon.com/images/I/512dVKB22QL._AC_UL600_SR600,600_.png'} 
-# #         ]
-# # }
-# # result = firebase.post('/data', data)
-# result = firebase.get('/data/-MM-Fk81Pb_-is1HFBre/coming soon', '')
-# print(result)
+from firebase import firebase
+firebase = firebase.FirebaseApplication('https://abj-website-coming.firebaseio.com/', None)
+# data = {
+#     'coming soon': [
+#         'placeholder',
+#         {'test': 'https://images-na.ssl-images-amazon.com/images/I/512dVKB22QL._AC_UL600_SR600,600_.png'} 
+#         ]
+# }
+# result = firebase.post('/data', data)
+result = firebase.get('/data/-MM-Fk81Pb_-is1HFBre/coming soon', '')
+print(result)
 
 app = Flask(__name__)
 Mobility(app)
 
 @app.route('/')
 def index():
-    try:
-        from firebase import firebase
-        return render_template('index2.html', coming=['placeholder'])
-    
-    except Exception as e:
-        return str(e)
-    
-    
+    return render_template('index2.html', coming=result)
 
 @app.route('/about')
 def about():
