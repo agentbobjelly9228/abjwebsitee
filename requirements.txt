@@ -8,3 +8,4 @@ sseclient==0.0.27
 jwt==1.1.0
 gcloud==0.18.3
 python-jwt==3.3.0
+pycrypto==2.6.1
