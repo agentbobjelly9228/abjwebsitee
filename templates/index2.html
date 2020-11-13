@@ -210,9 +210,19 @@
 
 			<h2>Coming Soon!</h2>
 			<br>
+			{% for i in range(coming|length) %}
+			{% if coming|length == 1 %}
+			<p>None for now</p>
+			{% else %}
+			{% if coming[i] == 'placeholder' %}
+			<div></div>
+			{% else %}
+			<h3>{{ coming[i]['name'] }}</h3>
+			<img src="{{coming[i]['img']}}" alt="clipboard" id="clipboard">
+			{% endif %}
+			{% endif %}
+			{% endfor %}
 
-			<h3>List-To-Do<br>Version 2</h3>
-			<img src="{{url_for('static', filename='busicon2.PNG')}}" alt="clipboard" id="clipboard">
 		</div>
 		<script>
 			function openNav() {
