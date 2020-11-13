@@ -27,20 +27,23 @@ def about():
 @app.route('/suggestions', methods = ["POST", "GET"])
 def suggestions():
     if request.method == "POST":
-        stuff = request.form["sug"]
-        print(stuff)
-        with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-            smtp.ehlo()
-            smtp.starttls()
-            smtp.ehlo()
+        try:
+            stuff = request.form["sug"]
+            print(stuff)
+            with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+                smtp.ehlo()
+                smtp.starttls()
+                smtp.ehlo()
 
-            smtp.login('suggestabj@gmail.com', 'P@@ssword123')
+                smtp.login('suggestabj@gmail.com', 'P@@ssword123')
 
-            subject = "suggestion"
-            body = str(stuff)
+                subject = "suggestion"
+                body = str(stuff)
 
-            msg = f"Subject: {subject}\n\n{body}"
-            smtp.sendmail('suggestabj@gmail.com', 'agentbobjelly@gmail.com', msg)
+                msg = f"Subject: {subject}\n\n{body}"
+                smtp.sendmail('suggestabj@gmail.com', 'agentbobjelly@gmail.com', msg)
+        except Exception as e:
+            return str(e)
     return render_template("suggestions2.html")
 
 @app.route('/products')
