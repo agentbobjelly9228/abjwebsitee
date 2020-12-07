@@ -1,34 +1,37 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-      <link rel="icon" href="{{ url_for('static', filename = 'busicon.png')}}">
+
+<head>
+  <link rel="icon" href="{{ url_for('static', filename = 'busicon.png')}}">
 
 
-        <title>ABJ Industries</title>
-    </head>
-    <body>
-      <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}" type="text/css">
-        
-        <section id = "hello">
-          <h1 style="font-size: 70px; text-align: center; color: black">ABJ Industries <img src="{{ url_for('static', filename = 'busicon.png')}}" alt="" style="width: 100px; height: 100px;"></h1>
-          <p> 
-              <a href="{{ url_for('about')}}" id = "test">What we do</a>
-              <a href="{{ url_for('suggestions') }}">Suggestions</a>
-              <a href="">Our Products</a>
-              <a href="{{ url_for('index') }}">Home</a>
-          </p>
-        </section>
-        <h2>Coming Soon!</h2>
-        <section>
-          <p id = "soon">
-            List-To-Do Version 2
-            <img src="{{ url_for('static', filename = 'appstore.png')}}" id="todoicon" >
-          </p>
+  <title>ABJ Corp</title>
+</head>
 
-        </section>
+<body>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}" type="text/css">
 
-    
+  <section id="hello">
+    <h1 style="font-size: 70px; text-align: center; color: black">ABJ Industries <img
+        src="{{ url_for('static', filename = 'busicon.png')}}" alt="" style="width: 100px; height: 100px;"></h1>
+    <p>
+      <a href="{{ url_for('about')}}" id="test">What we do</a>
+      <a href="{{ url_for('suggestions') }}">Suggestions</a>
+      <a href="">Our Products</a>
+      <a href="{{ url_for('index') }}">Home</a>
+    </p>
+  </section>
+  <h2>Coming Soon!</h2>
+  <section>
+    <p id="soon">
+      List-To-Do Version 2
+      <img src="{{ url_for('static', filename = 'appstore.png')}}" id="todoicon">
+    </p>
 
-    </body>
+  </section>
+
+
+
+</body>
+
 </html>
