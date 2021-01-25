@@ -4,7 +4,7 @@ from flask_mobility import Mobility
 from firebase import firebase
 firebase = firebase.FirebaseApplication('https://abj-website-coming.firebaseio.com/', None)
 # data = {
-#     'coming soon': 
+#     'coming soon': ]
 #         'placeholder',
 #         {'test': 'https://images-na.ssl-images-amazon.com/images/I/512dVKB22QL._AC_UL600_SR600,600_.png'} 
 #         ]
